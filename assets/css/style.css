@@ -5,30 +5,29 @@
     box-sizing: border-box;
 }
 
+/* General styles */
 body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     /* Generic project styles */
     color: #3a3a3a;
-    font-family: 'Lato', sans-serif;
-}
-header{
-    background-color: blue;
 }
 
+
+/* Header */
+header {
+    background-color: lightcoral;
+}
+
+/* Main content */
 main {
-    background-color: green;
-    flex: 1,0,auto;
-    
+    background-color: lightblue;
+    /* Make main element take up any surplus space to push footer down */
+    flex: 1 0 auto;
 }
 
+/* Footer */
 footer {
-    background-color: red;
-}
-
-.logo{
-    padding: 10px;
-    max-height: 80px;
-    max-width: 100px;
+    background-color: orange;
 }
