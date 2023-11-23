@@ -7,7 +7,6 @@
     margin: 0;
     box-sizing: border-box;
 }
-
 /* General styles */
 body {
     min-height: 100vh;
@@ -17,8 +16,6 @@ body {
     color: blue;
     font-family: 'Roboto',sans-serif;
 }
-
-
 /* Header */
 header {
     background-color: rgba(1, 27, 47, 0.8);
@@ -28,14 +25,25 @@ header {
     z-index: 99;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    
-    
+    align-items: center;   
 }
 
 header a{
     text-decoration: none;
     color: inherit;
+}
+
+#logo {
+    max-width: 80px;
+    padding: 10px;
+}
+
+#box {
+    background-image: url("../images/main.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 200px;
+    flex: 1, 0, auto;
 }
 
 nav {
@@ -46,7 +54,6 @@ nav {
     padding: 0 1rem;
     display: none;
     top: 100%;/*tells element to start at the bottom of its parent*/
-
 }
 
 /*Nav toggle*/
@@ -88,16 +95,32 @@ footer {
     background-color: rgba(1, 27, 47, 0.8);
 }
 
-#logo{
-    max-width:80px;
-    padding: 10px;
-}
+/*media query for tablets and larger(768px and up)*/
+@media screen and (min-width: 768px) {
+    /*Header*/
+    nav{
+        display: block;
+        position: relative;
+        width: fit-content;
+        padding-right: 1rem;/*does nothing*/
+        background-color: rgba(0, 0, 0, 0);
+        margin-top: 10px;
+       
+        
+    } 
 
-#box{
-    background-image: url("../images/main.webp");
-        background-size: contain;
-        background-repeat: no-repeat;
-    height: 200px;
     
-    flex:1,0,auto;
+
+    #menu{
+        display: flex;
+    }
+
+    #menu li{
+        padding-left: 1rem;
+    }
+    
+    .nav-toggle-label{
+
+        display: none;
+    }
 }
