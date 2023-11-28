@@ -7,28 +7,30 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 /* General styles */
 body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     /* Generic project styles */
-    color: blue;
-    font-family: 'Roboto',sans-serif;
+    color: rgb(241, 241, 241);
+    font-family: 'Roboto', sans-serif;
 }
+
 /* Header */
 header {
-    background-color: rgba(1, 27, 47, 0.8);
+    background-color: rgb(1, 27, 47);
     width: 100%;
     padding: 0 1rem;
     position: fixed;
     z-index: 99;
     display: flex;
     justify-content: space-between;
-    align-items: center;   
+    align-items: center;
 }
 
-header a{
+header a {
     text-decoration: none;
     color: inherit;
 }
@@ -38,36 +40,29 @@ header a{
     padding: 10px;
 }
 
-#box {
 
-    height: 600px;
-    width: 100%;
-    
-    background: url("../images/race.jpg") no-repeat center center/cover;
-    
-    
-}
 
 nav {
     position: absolute;
-    background-color: rgba(1, 27, 47, 0.8);
+    background-color: rgb(1, 27, 47);
     width: 100%;
     left: 0;
     padding: 0 1rem;
     display: none;
-    top: 100%;/*tells element to start at the bottom of its parent*/
+    top: 100%;
+    /*tells element to start at the bottom of its parent*/
 }
 
 /*Nav toggle*/
-#nav-toggle:checked~nav{
+#nav-toggle:checked~nav {
     display: block;
 }
 
-#nav-toggle{
+#nav-toggle {
     display: none;
 }
 
-.nav-toggle-label{
+.nav-toggle-label {
     font-size: 2rem;
 }
 
@@ -88,20 +83,20 @@ nav {
 
 /* Main content */
 main {
-    margin-top:51px ;
+    margin-top: 51px;
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
-    
+
 }
 
 /* Footer */
 footer {
-    background-color: rgba(1, 27, 47, 0.8);
+    background-color: rgb(1, 27, 47);
     color: rgb(241, 241, 241);
-   
+
 }
 
-#social{
+#social {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -110,56 +105,113 @@ footer {
     margin: 10px;
 }
 
+.hero-image{
+    background-image: linear-gradient(rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)), 
+    url("../images/hero.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.hero-image .hero-text{
+    color: inherit;
+    text-align: center;
+}
+
+.hero-image .hero-text h1{
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.hero-image .hero-text p{
+    font-size: 30px;
+    font-weight: 500;
+   
+}
+
+.hero-image .hero-btn{
+    text-decoration: none;
+    color: black;
+    background: rgb(126, 110, 0);
+    padding: 10px 30px;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.hero-image .hero-btn:hover{
+    background: green;
+    color: white;
+}
+
+
+
+
 /*media query for tablets and larger(768px and up)*/
 @media screen and (min-width: 768px) {
+
     /*Header*/
-    nav{
+    nav {
         display: block;
         position: relative;
         width: fit-content;
-        padding-right: 1rem;/*does nothing*/
+        padding-right: 1rem;
+        /*does nothing*/
         background-color: rgba(0, 0, 0, 0);
         margin-top: 10px;
-       
-        
-    } 
 
-    
 
-    #menu{
+    }
+
+
+
+    #menu {
         display: flex;
         font-size: 150%;
         letter-spacing: 6px;
     }
 
-    #menu li{
+    #menu li {
         padding-left: 1rem;
     }
-    
-    .nav-toggle-label{
+
+    .nav-toggle-label {
 
         display: none;
     }
 
-    #logo{
+    #logo {
 
         min-height: 100px;
         min-width: 140px;
         margin-left: 10px;
-        margin-top:5px;
+        margin-top: 5px;
     }
 
-         main {
-             margin-top: 109px;
-         }
-   
-
-   /*media query for 992px screens and larger(992x and up)*/
-   @media screen and (min-width: 992px) {
-    #menu a:hover{
-        border-bottom: 1px solid rgb(241, 241, 241);
+    main {
+        margin-top: 109px;
     }
-   }
 
     
+
+}
+
+/*media query for 992px screens and larger(992x and up)*/
+@media screen and (min-width: 992px) {
+    #menu a:hover {
+        border-bottom: 1px solid rgb(241, 241, 241);
+    }
+}
+
+/*media query for 1440px screens and larger(1440x and up)*/
+@media screen and (min-width: 1440px) {
+    body {
+        font-size: 150%;
+    }
 }
