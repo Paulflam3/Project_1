@@ -132,6 +132,7 @@ footer {
 .hero-image .hero-text p{
     font-size: 30px;
     font-weight: 500;
+    max-width: 90vw;
    
 }
 
