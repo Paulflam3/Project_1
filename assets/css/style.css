@@ -70,6 +70,11 @@ nav {
     font-size: 110%;
     letter-spacing: 4px;
     list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
 }
 
 #menu li {
@@ -176,7 +181,7 @@ footer {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),
             rgba(0, 0, 0, 0.5)),
         url("../images/drivers.jpg");
-    box-shadow: 10px 5px 20px rgba(294, 32, 39, 2);    
+    box-shadow: 10px 5px 10px rgba(294, 32, 39, 2);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -185,9 +190,9 @@ footer {
 
 #car-card {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),
-                rgba(0, 0, 0, 0.5)),
-            url("../images/cars.jpg");
-    box-shadow: 10px 5px 20px rgba(255, 202, 6, 2);
+            rgba(0, 0, 0, 0.5)),
+        url("../images/cars.jpg");
+    box-shadow: 10px 5px 10px rgba(255, 202, 6, 2);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -197,18 +202,25 @@ footer {
 #engine-card {
 
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),
-                rgba(0, 0, 0, 0.5)),
-            url("../images/engines.jpg");
-    box-shadow: 10px 5px 20px rgba(34, 57, 114, 2);
+            rgba(0, 0, 0, 0.5)),
+        url("../images/engines.jpg");
+    box-shadow: 10px 5px 10px rgba(34, 57, 114, 2);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 
 }
 
-.explore {}
+h2 {
+    text-decoration: none;
+}
 
-.explore .cards .card h2 {}
+.card h2 {
+    font-size: 250%;
+
+}
+
+
 
 /*media query for tablets and larger(768px and up)*/
 @media screen and (min-width: 768px) {
@@ -230,6 +242,7 @@ footer {
 
     #menu {
         display: flex;
+        flex-direction: row;
         font-size: 150%;
         letter-spacing: 6px;
     }
