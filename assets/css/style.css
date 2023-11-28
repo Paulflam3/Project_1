@@ -105,10 +105,10 @@ footer {
     margin: 10px;
 }
 
-.hero-image{
-    background-image: linear-gradient(rgba(0,0,0,0.5),
-    rgba(0,0,0,0.5)), 
-    url("../images/hero.webp");
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)),
+        url("../images/hero.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -119,24 +119,24 @@ footer {
 
 }
 
-.hero-image .hero-text{
+.hero-image .hero-text {
     color: inherit;
     text-align: center;
 }
 
-.hero-image .hero-text h1{
+.hero-image .hero-text h1 {
     font-size: 50px;
     font-weight: 500;
 }
 
-.hero-image .hero-text p{
+.hero-image .hero-text p {
     font-size: 30px;
     font-weight: 500;
     max-width: 90vw;
-   
+
 }
 
-.hero-image .hero-btn{
+.hero-image .hero-btn {
     text-decoration: none;
     color: black;
     background: rgb(126, 110, 0);
@@ -146,13 +146,69 @@ footer {
     display: inline-block;
 }
 
-.hero-image .hero-btn:hover{
+.hero-image .hero-btn:hover {
     background: green;
     color: white;
 }
 
+.cards {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 15px;
+    background-color: gray;
 
+}
 
+.card {
+    width: 90vw;
+    height: 30vh;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#driver-card {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)),
+        url("../images/drivers.jpg");
+    box-shadow: 10px 5px 20px rgba(294, 32, 39, 2);    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#car-card {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)),
+            url("../images/cars.jpg");
+    box-shadow: 10px 5px 20px rgba(255, 202, 6, 2);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#engine-card {
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)),
+            url("../images/engines.jpg");
+    box-shadow: 10px 5px 20px rgba(34, 57, 114, 2);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.explore {}
+
+.explore .cards .card h2 {}
 
 /*media query for tablets and larger(768px and up)*/
 @media screen and (min-width: 768px) {
@@ -199,7 +255,7 @@ footer {
         margin-top: 109px;
     }
 
-    
+
 
 }
 
