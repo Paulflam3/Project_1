@@ -92,6 +92,7 @@ main {
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
 
+
 }
 
 /* Footer */
@@ -117,10 +118,10 @@ footer {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 90vh;
+    height: 50vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    top: 20px;
 
 }
 
@@ -141,20 +142,6 @@ footer {
 
 }
 
-.hero-image .hero-btn {
-    text-decoration: none;
-    color: black;
-    background: rgb(126, 110, 0);
-    padding: 10px 30px;
-    border-radius: 5px;
-    margin-top: 10px;
-    display: inline-block;
-}
-
-.hero-image .hero-btn:hover {
-    background: green;
-    color: white;
-}
 
 .cards {
     display: flex;
@@ -164,17 +151,19 @@ footer {
     align-items: center;
     padding-top: 15px;
     background-color: gray;
-    
+    flex-wrap: wrap;
+
 
 }
 
 .card {
-    width: 90vw;
-    height: 30vh;
+    min-width: 240px;
+    min-height: 200px;
     border-radius: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
+
 
 }
 
@@ -219,10 +208,87 @@ footer {
 
 }
 
-.cards a{
+.cards a {
     text-decoration: none;
     color: inherit;
 }
+
+/* Meetup Times section */
+#news {
+    /*background: green;*/
+    /* Handles responsivity without the need for a media query */
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+
+
+
+#news div {
+    color: inherit;
+    /*background-color: rgba(0, 0, 0, .6);*/
+    padding: 15px;
+    text-align: center;
+    /* This will not wrap on screens of less than 400px wide.
+    Each div will expand to fill the available space on its row */
+    flex-basis: 200px;
+    flex-grow: 1;
+    justify-content: space-around;
+
+}
+
+#news h3 {
+    /* Override the heading colour set in general styles */
+    color: inherit;
+
+}
+
+
+#latest h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.image-conrainer {
+    min-width: 200px;
+    max-height: 195px;
+    overflow: hidden;
+
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.image-container h3 {
+    margin-bottom: 10px;
+}
+
+#latest {
+    color: black;
+}
+
+.comp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    color: black;
+
+    text-align: center;
+
+
+}
+
+#pointer {
+    font-size: 200%;
+}
+
 
 
 
@@ -271,6 +337,8 @@ footer {
     main {
         margin-top: 109px;
     }
+
+
 
 
 
