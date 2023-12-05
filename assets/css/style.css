@@ -242,7 +242,7 @@ footer {
 
 
 .survey-form {
-
+    padding-top: 20px;
     margin-top: 30px;
     max-width: 80%;
     margin-left: 10%;
@@ -261,10 +261,30 @@ footer {
     display: flex;
     flex-direction: column;
     padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+.radio-div {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+input[type="radio"] {
+
+    height: 15px;
+    margin-left: 5%;
+    width: 10%
+}
+
+select{
+    width: 90%;
 }
 
 input{
-    width: 90%;
+    width: 85%;
     margin-bottom: 5px;
     margin-top: 5px;
     margin-left: 5%;
@@ -272,6 +292,7 @@ input{
 }
 
 label{
+    font-size: 90%;
     padding-left: 5%;
     margin-top: 5px;
 }
@@ -285,9 +306,15 @@ label, input{
     margin-bottom: 20px;
 }
 
-#dropdown label{
-    display: inline;
+#name-label{
+    margin-top: 70px;
 }
+
+.radio-label{
+    padding-bottom: 20px;
+}
+
+
 
 
 
