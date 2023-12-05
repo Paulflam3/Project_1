@@ -46,10 +46,143 @@
         </nav>
     </header>
 
-    <main>
-            <section>
-                <h2>Survey</h2>
-            </section>
+    <main class="survey-main">
+           <section class="heading">
+                <h1>Red Bull Racing Survey</h1>
+                <p>Thank you for taking the time to help us improve the platform</p>
+                </section>
+                
+                <form action="" class=" survey-form">
+                <div class="info-div">
+                    <label id="name-label" class="toplabel" for="first-name">Name <input id="name" name="-name" type="text"
+                            placeholder="Enter your name" required /></label>
+                        </div>
+
+                        <div class="info-div">
+                    <label id="email-label" for="email">Email <input id="email" name="email" type="email" placeholder="Enter your Email"
+                            required /></label>
+                            </div>
+
+                            <div class="info-div">
+                    <label id="number-label" for="number">Age(optional) <input id="number" name="number" type="number" placeholder="Age"
+                            min="12" max="110" /></label>
+                            </div>
+                            
+                <div class="select-div">
+                  <label for="dropdown">Favorite Red Bull Driver?
+                        <select id="dropdown" name="dropdown">
+                            <option value="" disabled>Select current role </option>
+                            <option value="1">Student</option>
+                            <option value="2">Full time job</option>
+                            <option value="3">Full time learner</option>
+                            <option value="4">Prefer not to say</option>
+                            <option value="5">Other</option>
+                        </select>
+                    </label>
+                    </div>
+                <!-- 
+                    <div> <label>Would you recommend freeCodeCamp to a friend?</label></div>
+                
+                    <div class="formRadio">
+                        <input id="definitely" type="radio" value="Definitely" name="button-type" checked />
+                        <label class="radioLabel" for="radio"> Definitely</label>
+                    </div>
+                
+                    <div class="formRadio">
+                        <input id="definitely" type="radio" value="Definitely" name="button-type" />
+                        <label class="radioLabel" for="radio"> Maybe</label>
+                    </div>
+                
+                    <div class="formRadio">
+                        <input id="definitely" type="radio" value="Definitely" name="button-type" />
+                        <label class="radioLabel" for="radio"> Not Sure</label>
+                    </div>
+                
+                
+                    <label for="dropdown">What was your favorite feature of freeCodeCamp?
+                        <select id="dropdown2" name="dropdown2">
+                            <option value="" disabled>Select an option </option>
+                            <option value="1">Challenges</option>
+                            <option value="2">Projects</option>
+                            <option value="3">Community</option>
+                            <option value="4">Open Source</option>
+                        </select>
+                    </label>
+                    <div> <label>What would you like to see improved? (Check all that apply)</label></div>
+                
+                    <div class="formRadio">
+                        <input id="definitely" type="checkbox" value="Definitely" name="button-type" />
+                        <label class="radioLabel" for="radio"> Front-end Projects</label>
+                    </div>
+                
+                    <div class="formRadio">
+                        <input id="definitely" type="checkbox" value="Definitely" name="button-type" />
+                        <label class="radioLabel" for="radio"> Back-end Projects</label>
+                    </div>
+                
+                    <div class="formRadio">
+                        <input id="definitely" type="checkbox" value="Definitely" name="button-type" />
+                        <label class="radioLabel" for="radio"> Data Visualization</label>
+                    </div>
+                    <div class="formRadio">
+                        <input id="definitely" type="checkbox" value="Definitely" name="button-type" />
+                        <label class="radioLabel" for="radio">Challenges</label>
+                    </div>
+                
+                    <div class="formRadio">
+                        <input id="definitely" type="checkbox" value="Definitely" name="button-type" />
+                        <label class="radioLabel" for="radio">Open Source Community</label>
+                    </div>
+                
+                    <div class="formRadio">
+                        <input id="definitely" type="checkbox" value="Definitely" name="button-type" />
+                        <label class="radioLabel" for="radio">Gitter help rooms</label>
+                    </div>
+                    <div class="formRadio">
+                        <input id="definitely" type="checkbox" value="Definitely" name="button-type" />
+                        <label class="radioLabel" for="radio">Videos</label>
+                    </div>
+                
+                    <div class="formRadio">
+                        <input id="definitely" type="checkbox" value="Definitely" name="button-type" />
+                        <label class="radioLabel" for="radio">City Meetups</label>
+                    </div>
+                
+                    <div class="formRadio">
+                        <input id="definitely" type="checkbox" value="Definitely" name="button-type" />
+                        <label class="radioLabel" for="radio">Wiki</label>
+                    </div>
+                
+                    <div class="formRadio">
+                        <input id="definitely" type="checkbox" value="Definitely" name="button-type" />
+                        <label class="radioLabel" for="radio">Forum</label>
+                    </div>
+                
+                    <div class="formRadio">
+                        <input id="definitely" type="checkbox" value="Definitely" name="button-type" />
+                        <label class="radioLabel" for="radio">Additional Courses</label>
+                    </div>
+                
+                    <label for="bio">Provide a bio:
+                        <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
+                    </label>
+
+                    
+
+                    
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                </form>
+            
     </main>
     <footer>
         <ul id="social">
