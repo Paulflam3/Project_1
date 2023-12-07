@@ -122,20 +122,20 @@ footer {
     display: flex;
     justify-content: left;
     top: 20px;
-    
+
 
 }
 
 
 
 .hero-text {
-  bottom: 1em;
-  max-width: 200px;
-  font-size: 120%;
-  padding-left: 20px;
-  padding-top: 200px;
+    bottom: 1em;
+    max-width: 200px;
+    font-size: 120%;
+    padding-left: 20px;
+    padding-top: 200px;
 
-  
+
 }
 
 
@@ -220,20 +220,22 @@ footer {
     font-size: 200%;
 }
 
-.heading{
+.heading {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
+
 .survey-main {
     padding-top: 50px;
     color: black;
     max-width: 100%;
-    
-    
+
+
 }
-    /* background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+
+/* background-image: linear-gradient(rgba(0, 0, 0, 0.5),
             rgba(0, 0, 0, 0.5)),
         url("../images/hero.webp");
     background-position: center;
@@ -247,17 +249,17 @@ footer {
     max-width: 80%;
     margin-left: 10%;
     background-color: green;
-    
-    
+
+
 }
 
 
-.info-div{
+.info-div {
     padding-left: 10px;
-    
+
 }
 
-.select-div{
+.select-div {
     display: flex;
     flex-direction: column;
     padding-left: 10px;
@@ -279,54 +281,108 @@ input[type="radio"] {
     width: 10%
 }
 
-select{
+select {
     width: 90%;
 }
 
-input{
+input {
     width: 85%;
     margin-bottom: 5px;
     margin-top: 5px;
     margin-left: 5%;
-    
+
 }
 
-label{
+label {
     font-size: 90%;
     padding-left: 5%;
     margin-top: 5px;
 }
 
-label, input{
-    display:inline;
-    
+label,
+input {
+    display: inline;
+
 }
 
-.heading h1{
+.heading h1 {
     margin-bottom: 20px;
 }
 
-#name-label{
+#name-label {
     margin-top: 70px;
 }
 
-.radio-label{
+.radio-label {
     padding-bottom: 20px;
 }
 
-.radio-names{
+.radio-names {
     padding: 0;
 }
 
+.driver-card {
+    position: absolute;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 20px;
+    height: 320px;
+    border: 2px solid red;
+    color: black;
+    z-index: 7;
+    background-color: rgba(6, 10, 12, 0.295);
+}
+
+.driver-pic {
+    background-image: url("../images/engines.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 10px;
+    height: 150px;
+   /* border: 2px solid green;*/
+    z-index: 6;
+}
+
+.driver-info {
+    position: relative;
+    display: flex;
+   
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 10px;
+    height: 170px;
+   /* border: 2px solid blue;*/
+    z-index: 6;
+   
+}
+
+.driver-row {
+    
+   
+    font-size: 70%;
+    width: 50%;
+   
+    height: 170px;
+    /*border: 2px solid orange;*/
+    z-index: 6;
+    justify-content: left;
+}
+.driver-data {
 
 
 
-
-
-
-
-
-
+    width: 50%;
+    font-size: 70%;
+    height: 170px;
+    /*border: 2px solid yellow;*/
+    z-index: 6;
+    justify-content: right;
+    text-align: right;
+}
 
 
 
